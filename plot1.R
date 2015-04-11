@@ -7,8 +7,8 @@ kn <- subset(elec, elec$Dt>=as.Date("2007-02-01"))
 kn <- subset(kn, kn$Dt<=as.Date("2007-02-02"))
 
 ##Creating a new attribute (datd) containing time
-knw$dat <- paste(knw$Date,knw$Time)
-knw$datd <- strptime(knw$dat,"%d/%m/%Y %H:%M:%S")
+kn$dat <- paste(kn$Date,kn$Time)
+kn$datd <- strptime(kn$dat,"%d/%m/%Y %H:%M:%S")
 
 
 ##Plot1
